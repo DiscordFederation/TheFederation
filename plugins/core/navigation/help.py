@@ -45,7 +45,7 @@ class HelpPaginator(Pages):
 
         self.embed.add_field(
             name="​",
-            value="Powered by [Erin]" "(https://github.com/DiscordFederation/Erin)",
+            value="Powered by [Erin]" "(https://github.com/OpenDebates/Erin)",
         )
 
         if self.maximum_pages:

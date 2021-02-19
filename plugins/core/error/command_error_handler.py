@@ -16,6 +16,9 @@ class CommandError(commands.Cog, name="Command Error"):
             )
             return await ctx.author.send(embed=response)
 
+        if isinstance(exception, commands.CommandNotFound):
+            return
+
         self.bot.logger.exception(f"ERROR: {exception}", exc_info=exception)
 
 
